@@ -1,0 +1,4 @@
+data/*
+!.gitkeep
+sas/*.log
+sas/bootstrap.sas
