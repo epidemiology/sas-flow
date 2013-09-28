@@ -2,14 +2,18 @@
 An opinionated SAS workflow for better organization, collaboration, and multi-platform support.
 
 ## Preamble
-I created `sas-flow` with a few goals in mind:
+`sas-flow` was created with a few goals in mind:
 
-- **Organization:** I wanted a better way to organize my SAS code than putting everything in one monolithic file, or a bunch of separate, unconnected files.
-- **Collaboration:** It should be easy to share SAS code within a team of collaborators.
-- **Reproducibility:** It should be easy to re-run an analysis and reliably get the same results (no "where did that number come from?).
-- **Tooling:** I wanted to bring state-of-the-art programmer tools to my SAS code, specifically [Sublime Text] for editing code and [git] for storing it.
-- **Good defaults:** I wanted an easy way to apply sensible SAS defaults at the beginning of each new analysis project.
-- **Mac support:** I run SAS in a Windows virtual machine on OS X, and I want to use Windows as little as possible. `sas-flow` lets me write my SAS code and view my output in OS X.
+- **Organization:** We need a better way to organize SAS code than putting everything in one monolithic file, or a bunch of separate, unconnected files.
+- **Collaboration:** It should be easy to share SAS code within a team of collaborators. Getting started with a `sas-flow` project you have never seen before should be easy and self-explanatory.
+- **Reproducibility:** It should be easy to re-run an analysis and reliably get the same results (no "where did that number come from?").
+- **Tooling:** SAS programmers should have state-of-the-art tools, like a real text editor (e.g. [Sublime Text][1]) for editing code and version control ([git][2]) for storing it.
+- **Good defaults:** Sensible SAS defaults should be applied to every project, like setting the working directory appropriately and producing HTML output.
+- **Mac support:** Mac users running SAS in a virtual machine should be first-class citizens and should be able to write code and view output in OS X.
+
+To this end, `sas-flow` is a project template along with some well-documented guidelines. Together, these create a streamlined SAS workflow that will save time and prevent gray hairs.
+
+### Learning curve
 
 It will take you about an hour to carefully read through this documentation and understand how `sas-flow` works. __This time investment is 100% worth it.__ `sas-flow` will save you lots of time down the road.
 
