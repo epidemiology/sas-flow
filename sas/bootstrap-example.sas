@@ -11,10 +11,11 @@
   After that, you can run `analysis.sas` directly.
 */
 
-x 'cd c:\path\to\hypothermia\sas';
+x 'cd c:\path_to_project\sas';
 
-ODS html path='c:\path\to\hypothermia\sasout' gpath='c:\path\to\hypothermia\sasout\images' (url="images/") file='sasout.html';
-libname hypo "c:\path\to\hypothermia\data";
+ODS html path='c:\path_to_project\sas\out' gpath='c:\path_to_project\sas
+out\images' (url="images/") file='sasout.html';
+libname hypo "c:\path_to_project\data";
 
 * Run preflight stuff.;
-%include 'preflight.sas'
+%include 'lib\preflight.sas'
