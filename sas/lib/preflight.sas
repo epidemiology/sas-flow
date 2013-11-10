@@ -10,5 +10,5 @@ dm 'clear out';   /* Clear the output file */
 
 * Page settings;
 options nodate pageno=1 linesize=80 pagesize=60 source;
-proc printto print='..\sasout\sas.sasoutput' new; run;
-proc printto log='..\sasout\sas.log' new; run;;
+proc printto print='..\sas\out\sas.sasoutput' new; run;
+proc printto log='..\sas\out\sas.log' new; run;;
