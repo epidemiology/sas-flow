@@ -13,8 +13,9 @@
 
 x 'cd c:\path_to_project\sas';
 
+* Run preflight stuff.;
+%include 'lib\preflight.sas'
+
 ODS html path='c:\path_to_project\sas\out' gpath='c:\path_to_project\sas\out\images' (url="images/") file='sasout.html';
 libname library_name_goes_here "c:\path_to_project\data";
 
-* Run preflight stuff.;
-%include 'lib\preflight.sas'
