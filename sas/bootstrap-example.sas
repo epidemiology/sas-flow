@@ -1,21 +1,37 @@
 /*
-  This file sets up paths and such. You'll need to modify the paths below and then
-  save the file as `bootstrap.sas`. Keep `bootstrap-example.sas` around as a
-  reference for people new to the project.
+   ------------------------------------------
+  | SAS-FLOW                                 |
+  | Version 1.0                              |
+  | http://epidemiology.github.io/sas-flow/  |
+   ------------------------------------------
 
-  Each SAS file should start with `%include 'bootstrap.sas';` to make sure all
-  your paths, libraries, etc. are set up properly.
 
-  When you first start up your SAS session, you'll need to run this file directly
-  to make sure your current directory is in the right place for `%includes` to work.
-  After that, you can run `analysis.sas` directly.
+  This file defines the location of your project and the name of your data
+  library for this project.
+
+  Setup instructions:
+  -------------------
+
+    1. Save this file in the same folder as `bootstrap.sas.`
+    2. Set the path name below.
+    3. Set your library name below.
+
+  Running instructions:
+  ---------------------
+
+  Run this file first whenever you start a new SAS session to set up your paths
+  and library.
+
+  After you run it once, until you close SAS you can just run `master.sas`
+  directly to execute all your code.
+
 */
 
-x 'cd c:\path_to_project\sas';
 
-* Run preflight stuff.;
+/* MODIFY THE NEXT TWO LINES: */
+x 'cd c:\REPLACE_WITH_PATH_TO_PROJECT\sas';
+libname REPLACE_WITH_LIBRARY_NAME "..\data";
+
+/* DON'T CHANGE ANYTHING BELOW THIS LINE. */
 %include 'lib\preflight.sas';
-
-ODS html path='c:\path_to_project\sas\out' gpath='c:\path_to_project\sas\out\images' (url="images/") file='sasout.html';
-libname library_name_goes_here "c:\path_to_project\data";
 
